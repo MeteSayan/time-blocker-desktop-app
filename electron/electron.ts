@@ -1,5 +1,6 @@
 import { app, BrowserWindow } from "electron";
 import * as path from "path";
+import { InitTray } from "./trayWindow";
 
 let mainWindow: Electron.BrowserWindow | null;
 
@@ -21,7 +22,10 @@ function createWindow() {
     })
 }
 
-app.on("ready", createWindow);
+app.on("ready", () => {
+    createWindow();
+    InitTray();
+});
 
 app.on("window-all-closed", () => {
     if (process.platform !== "darwin") {
