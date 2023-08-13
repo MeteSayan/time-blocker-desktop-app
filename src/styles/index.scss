@@ -1,0 +1,13 @@
+@import 'bulma/bulma.sass';
+@import './app.scss';
+
+.pointer {
+    cursor: pointer !important;
+}
+
+.text-overflow {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

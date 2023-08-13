@@ -32,9 +32,6 @@ $ npm run start:desktop
 # Get build for web and electron and start the app
 $ npm run start:app
 
-# For react tests
-$ npm run test
-
 # For react eject
 $ npm run eject
 ```

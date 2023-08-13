@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
-import './App.css';
+import './styles/app.scss';
 import MainApp from './apps/Main';
 import TrayApp from './apps/Tray';
 
